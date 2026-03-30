@@ -238,3 +238,10 @@ body {
 .contact-info {
     font-weight: 500;
 }
+
+/* Hide buttons on mobile */
+@media(max-width: 700px){
+    .nav-links li {
+        display: none;
+    }
+}
