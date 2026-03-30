@@ -1,0 +1,240 @@
+/* Css Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+
+/* Fonts and stuff */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-padding-top: 64px;
+}
+
+/* Components */
+.button-small {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #b0b0b0;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.button-small:hover {
+    background-color:#e3e3e3;
+    transition: all 0.2s ease-in;
+}
+
+/* Nav */ 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px 0 64px;
+    background-color: white;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    position: sticky;
+    height: 64px;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links li {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+.nav-links li:hover {
+    background-color: rgb(235, 235, 235);
+    /* font-weight: bold; */
+    transition: all 0.2s ease-in;
+}
+
+.nav-links .primary-nav-button {
+    background-color: #4E61B7;
+    padding: 8px 24px;
+    color: white;
+}
+
+.nav-links .primary-nav-button:hover {
+    background-color: #404f94;
+    transition: all 0.2s ease-in;
+}
+
+/* Body */
+
+/*
+body {
+    display: flex;
+    flex-direction: column;
+} */
+
+.outer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 16px 0 16px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 96px 0 96px 0;
+}
+
+.main-subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+/* The rest of the body */
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#project-list ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    /* border: 1px solid rgb(176, 176, 176);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px; */
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 16px;
+}
+
+.card-project:hover {
+    background-color: rgb(238, 238, 243);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in;
+}
+
+.card-project__label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+#placeholder {
+    height: 800px;
+}
+
+/* project page */
+
+.notion-preview {
+    position: absolute;
+    height: calc(100vh - 64px);
+    top: 64px;
+}
+
+.resume-preview {
+    position: absolute;
+    height: calc(100vh - 64px);
+    top: 64px;
+}
+
+body {
+    margin: 0;
+}
+
+/* Contact Page */
+
+#contact-containers {
+    display: flex;
+    gap: 64px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 16px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-box:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in;
+}
+
+/* .contact-box a {
+    width: fit-content;
+} */
+
+.contact-info {
+    font-weight: 500;
+}
