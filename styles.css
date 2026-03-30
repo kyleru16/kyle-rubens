@@ -160,15 +160,12 @@ main {
     gap: 40px;
 }
 
-.project-card-container li {
-    flex: 1 0 420px;
+.card-project {
+    display: flex;
+    flex: 1 1 420px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.card-project {
-    display: flex;
 }
 
 .card-project a {
