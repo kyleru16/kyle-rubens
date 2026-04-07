@@ -5,16 +5,41 @@
   padding: 0;
 }
   
+/* Google Fonts */
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
-/* Fonts and stuff */
+
+/* Preset Attributes for Fonts and Elements */
+html {
+    scroll-padding-top: 64px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Darker Grotesque", sans-serif;
 }
 
 p {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(78, 78, 78);
 }
 
 h1 {
@@ -27,16 +52,18 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 ul {
     list-style: none;
 }
 
-html {
-    scroll-padding-top: 64px;
+img {
+    width: 100%;
+    border-radius: 8px;
 }
+
 
 /* Components */
 .button-small {
@@ -158,7 +185,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 96px 0 96px 0;
+    padding: 96px 0;
 }
 
 .main-subtitle {
@@ -167,12 +194,13 @@ main {
     line-height: 38px;
 }
 
-/* The rest of the body */
+/* Home - Projects */
 
-#project-list {
+section {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding: 48px 0;
 }
 
 .project-card-container {
@@ -188,12 +216,13 @@ main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 16px;
 }
 
 .card-project a {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     height: 100%;
     /* width: 100%; */
     /* border: 1px solid rgb(176, 176, 176);
@@ -214,8 +243,45 @@ main {
 .card-project__label {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+}
 
+/* Home - About Me*/
+
+#bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    max-width: 800px;
+    margin: auto;
+    padding: 32px 0;
+}
+
+#bio-text {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 360px;
+    gap: 32px;
+}
+
+#bio-text p {
+    font-size: 16px;
+}
+
+#bio-images {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 260px;
+    gap: 32px;
+}
+
+#bio-text a {
+    text-decoration: none;
+    /* color: rgb(82, 0, 188); */
+}
+
+#bio-text a:link {
+    color: #0313c5;
 }
 
 #placeholder {
@@ -337,5 +403,14 @@ body {
     /* .resume-preview.active {
         display: none;
     } */
+
+    #bio-text {
+        flex: auto;
+    }
+
+    #bio-images {
+        max-width: 400px;
+        margin: auto;
+    }
 
 }
