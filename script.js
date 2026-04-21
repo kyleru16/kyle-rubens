@@ -2,6 +2,7 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navBar = document.getElementById('navbar-id');
 const projectsButton = document.getElementById('projects-button');
+const aboutButton = document.getElementById('about-button');
 // const resumePreview = document.getElementById('resume-preview-id');
 
 hamburger.addEventListener('click', () => {
@@ -11,6 +12,11 @@ hamburger.addEventListener('click', () => {
 });
 
 projectsButton.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  navBar.classList.toggle('active');
+});
+
+aboutButton.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   navBar.classList.toggle('active');
 });

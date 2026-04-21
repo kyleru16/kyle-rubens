@@ -126,6 +126,7 @@ img {
 .nav-links a {
     display: block;
     font-family: "Inter", sans-serif;
+    font-weight: 300;
     font-size: 16px;
     padding: 12px 24px;
     border-radius: 12px;
@@ -185,13 +186,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 96px 0;
+    padding: 96px 0 64px 0;
 }
 
 .main-subtitle {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 38px;
+    max-width: 600px;
 }
 
 /* Home - Projects */
@@ -331,19 +333,22 @@ body {
 #contact-containers {
     display: flex;
     flex-wrap: wrap;
-    gap: 64px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-box {
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px;
+    flex: 0 0 calc((100% - 80px) / 3);
     gap: 8px;
     width: 100%;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 16px;
     padding: 24px 32px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 420px;
 }
 
 .contact-box:hover {
@@ -357,6 +362,12 @@ body {
 
 .contact-info {
     font-weight: 500;
+}
+
+.contact-box h3 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 /* Navbar padding adjustment */
@@ -374,6 +385,9 @@ body {
     .card-project {
         flex: 0 0 100%;
     }
+    .contact-box {
+        flex: 0 0 calc((100% - 40px) / 2);
+    }
 }
 
 /* Hide buttons on mobile */
@@ -384,9 +398,9 @@ body {
     }
 
     /* shrink logo */
-    .logo {
+    /* .logo {
         font-size: 24px;
-    }
+    } */
     
     /* hide links by default.*/
     .nav-links {
@@ -438,6 +452,10 @@ body {
     #bio-images {
         max-width: 400px;
         margin: auto;
+    }
+
+    .contact-box {
+        flex: 0 0 100%;
     }
 
 }
